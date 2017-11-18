@@ -8,7 +8,7 @@ SweetAlert for Android, a beautiful and clever alert dialog
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Sweet%20Alert%20Dialog-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1065)
 
-[中文版](https://github.com/cazaea/sweet-alert-dialog/blob/master/README.zh.md)
+[中文版](https://github.com/cazaea/sweet-alert-dialog/README.zh.md)
 
 [Demo Download](https://github.com/pedant/sweet-alert-dialog/releases/download/v1.1/sweet-alert-sample-v1.1.apk)
 
