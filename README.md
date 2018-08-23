@@ -22,8 +22,8 @@ The simplest way to use SweetAlertDialog is to add the library as aar dependency
 
 ```
 dependencies {
-        compile 'com.github.cazaea:sweet-alert-dialog:1.0.0'
-    }
+	        implementation 'com.github.yuxiaohui78:SweetAlertDialog:1.1.0'
+	}
 ```
 
 **Gradle**(Project)
