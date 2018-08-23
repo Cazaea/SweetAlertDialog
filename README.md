@@ -79,7 +79,7 @@ thanks to the project [materialish-progress](https://github.com/pnikosis/materia
 
 more usages about progress, please see the sample.
 
-A basic message：
+Add a neutral button ：
 
     new SweetAlertDialog(this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
         .setCustomImage(R.drawable.pill_icon)
