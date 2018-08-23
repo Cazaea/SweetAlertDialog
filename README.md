@@ -81,6 +81,19 @@ more usages about progress, please see the sample.
 
 A basic message：
 
+    new SweetAlertDialog(this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+        .setCustomImage(R.drawable.pill_icon)
+        .setTitleText("3:00PM")
+        .setContentText("Asprin 50 mg. Take 2 pills")
+        .setNeutralText("Later")
+        .setCancelText("Skip it")
+        .setConfirmText("Take it!")
+        .show();
+
+
+
+A basic message：
+
     new SweetAlertDialog(this)
         .setTitleText("Here's a message!")
         .setConfirmText("OK") // Do not set the property, do not show the button
