@@ -174,36 +174,7 @@ Show the cancel button and bind listener to it：
         })
         .show();
         
- Show three button       
-        new SweetAlertDialog(this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                        .setCustomImage(R.drawable.pill_icon)
-                        .setTitleText("3:00PM")
-                        .setContentText("Asprin 50 mg. Take 2 pills")
-                        .setNeutralText("Later")
-                        .setCancelText("Skip it")
-                        .setConfirmText("Take it!")
-                        .setNeutralClickListener(new SweetAlertDialog.OnSweetClickListener() {
-                            @Override
-                            public void onClick(SweetAlertDialog sweetAlertDialog) {
-                                Toast.makeText(SampleActivity.this, "Take it later!", Toast.LENGTH_SHORT).show();
-                                sweetAlertDialog.dismiss();
-                            }
-                        })
-                        .setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
-                            @Override
-                            public void onClick(SweetAlertDialog sweetAlertDialog) {
-                                Toast.makeText(SampleActivity.this, "Skip it!", Toast.LENGTH_SHORT).show();
-                                sweetAlertDialog.dismiss();
-                            }
-                        })
-                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
-                            @Override
-                            public void onClick(SweetAlertDialog sweetAlertDialog) {
-                                Toast.makeText(SampleActivity.this, "Take it now!", Toast.LENGTH_SHORT).show();
-                                sweetAlertDialog.dismiss();
-                            }
-                        })
-                        .show();
+ 
 
 [more android tech shares: cazaea.com](http://www.cazaea.com)
 
