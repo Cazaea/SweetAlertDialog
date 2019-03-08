@@ -33,12 +33,13 @@ public class SampleActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.three_button:
-                new SweetAlertDialog(this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                SweetAlertDialog sd1 = new SweetAlertDialog(this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
                         .setCustomImage(R.drawable.pill_icon)
                         .setTitleText("3:00PM")
                         .setContentText("Asprin 50 mg. Take 2 pills")
                         .setNeutralText("Later")
                         .setCancelText("Skip it")
+
                         .setConfirmText("Take it!")
                         .setNeutralClickListener(new SweetAlertDialog.OnSweetClickListener() {
                             @Override
@@ -60,8 +61,12 @@ public class SampleActivity extends Activity implements View.OnClickListener {
                                 Toast.makeText(SampleActivity.this, "Take it now!", Toast.LENGTH_SHORT).show();
                                 sweetAlertDialog.dismiss();
                             }
-                        })
-                        .show();
+                        });
+
+                sd1.setCancelable(true);
+                sd1.setCanceledOnTouchOutside(true);
+                sd1.show();
+                sd1.setDialogLayout(320, 200);
                 break;
             case R.id.basic_test:
                 // default title "Here's a message!"
@@ -117,7 +122,7 @@ public class SampleActivity extends Activity implements View.OnClickListener {
                         .show();
                 break;
             case R.id.warning_cancel_test:
-                new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
+                SweetAlertDialog sdd = new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
                         .setTitleText("Are you sure?")
                         .setContentText("Won't be able to recover this file!")
                         .setCancelText("No,cancel plx!")
@@ -155,8 +160,11 @@ public class SampleActivity extends Activity implements View.OnClickListener {
                                         .setConfirmClickListener(null)
                                         .changeAlertType(SweetAlertDialog.SUCCESS_TYPE);
                             }
-                        })
-                        .show();
+                        });
+
+
+                sdd.show();
+                sdd.setDialogWidth(300);
                 break;
             case R.id.custom_img_test:
                 new SweetAlertDialog(this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
