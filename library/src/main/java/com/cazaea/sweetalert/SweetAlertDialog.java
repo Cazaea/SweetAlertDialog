@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
@@ -14,6 +15,7 @@ import android.view.animation.Transformation;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.cazaea.materialishprogress.ProgressWheel;
@@ -169,7 +171,29 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         setNeutralText(mNeutralText);
         setConfirmText(mConfirmText);
         changeAlertType(mAlertType, true);
+    }
 
+    public static float convertDpToPixel(float dp, Context context) {
+        return dp * ((float) context.getResources().getDisplayMetrics().densityDpi / DisplayMetrics.DENSITY_DEFAULT);
+    }
+
+    public void setDialogLayout (int dpWidth, int dpHeight){
+        LinearLayout ly = findViewById(R.id.loading);
+        ly.getLayoutParams().width = (int)convertDpToPixel(dpWidth, getContext());
+        ly.getLayoutParams().height = (int)convertDpToPixel(dpHeight, getContext());
+        ly.setLayoutParams(ly.getLayoutParams());
+    }
+
+    public void setDialogWidth (int dpWidth){
+        LinearLayout ly = findViewById(R.id.loading);
+        ly.getLayoutParams().width = (int)convertDpToPixel(dpWidth, getContext());
+        ly.setLayoutParams(ly.getLayoutParams());
+    }
+
+    public void setDialogHeight (int dpHeight){
+        LinearLayout ly = findViewById(R.id.loading);
+        ly.getLayoutParams().height = (int)convertDpToPixel(dpHeight, getContext());
+        ly.setLayoutParams(ly.getLayoutParams());
     }
 
     private void restore () {
