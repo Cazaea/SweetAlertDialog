@@ -79,6 +79,21 @@ thanks to the project [materialish-progress](https://github.com/pnikosis/materia
 
 more usages about progress, please see the sample.
 
+Touch the outside to cancel the dialog ：
+
+    SweetAlertDialog sd = new SweetAlertDialog(this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+        .setCustomImage(R.drawable.pill_icon)
+        .setTitleText("3:00PM")
+        .setContentText("Asprin 50 mg. Take 2 pills")
+        .setNeutralText("Later")
+        .setCancelText("Skip it")
+        .setConfirmText("Take it!");
+	
+     sd.setCancelable(true);
+     sd.setCanceledOnTouchOutside(true);
+     sd.show();
+
+
 Add a neutral button ：
 
     new SweetAlertDialog(this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
