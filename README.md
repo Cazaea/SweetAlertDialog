@@ -74,6 +74,11 @@ You can customize progress bar dynamically with materialish-progress methods via
  - setRimColor(int rimColor)
  - getSpinSpeed()
  - setSpinSpeed(float spinSpeed)
+ 
+ - setDialogWidth (int dpWidth)
+ - setDialogHeight (int dpHeight)
+ - setDialogLayout (int dpWidth, int dpHeight)
+ 
 
 thanks to the project [materialish-progress](https://github.com/pnikosis/materialish-progress) and [@pedant](https://github.com/pedant) participation.
 
@@ -92,6 +97,8 @@ Touch the outside to cancel the dialog ：
      sd.setCancelable(true);
      sd.setCanceledOnTouchOutside(true);
      sd.show();
+     sd.setDialogWidth (s); //dynamically to change the dialog width
+     
 
 
 Add a neutral button ：
