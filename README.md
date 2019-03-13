@@ -22,7 +22,7 @@ The simplest way to use SweetAlertDialog is to add the library as aar dependency
 
 ```
 dependencies {
-	        implementation 'com.github.yuxiaohui78:SweetAlertDialog:1.1.0'
+	        implementation 'com.github.yuxiaohui78:SweetAlertDialog:1.1.1'
 	}
 ```
 
@@ -97,7 +97,7 @@ Touch the outside to cancel the dialog ：
      sd.setCancelable(true);
      sd.setCanceledOnTouchOutside(true);
      sd.show();
-     sd.setDialogWidth (s); //dynamically to change the dialog width
+     sd.setDialogWidth (300); //dynamically to change the dialog width (unit is dp)
      
 
 
