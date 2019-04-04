@@ -180,12 +180,10 @@ Show the cancel button and bind listener to it：
 
 ## License
 
-    The MIT License (MIT)
-    
-    Copyright (c) 2017 Cazaea(http://cazaea.com)
-    
     Anti 996 License Version 1.0 (Draft)
     
+    Copyright (c) 2017 Cazaea(http://cazaea.com)
+       
     Permission is hereby granted to any individual or legal entity
     obtaining a copy of this licensed work (including the source code,
     documentation and/or related items, hereinafter collectively referred
