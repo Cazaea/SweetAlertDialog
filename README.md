@@ -24,8 +24,8 @@ The simplest way to use SweetAlertDialog is to add the library as aar dependency
 
 ```
 dependencies {
-        compile 'com.github.cazaea:sweet-alert-dialog:1.0.0'
-    }
+	        implementation 'com.github.yuxiaohui78:SweetAlertDialog:1.1.1'
+	}
 ```
 
 **Gradle**(Project)
@@ -76,10 +76,45 @@ You can customize progress bar dynamically with materialish-progress methods via
  - setRimColor(int rimColor)
  - getSpinSpeed()
  - setSpinSpeed(float spinSpeed)
+ 
+ - setDialogWidth (int dpWidth)
+ - setDialogHeight (int dpHeight)
+ - setDialogLayout (int dpWidth, int dpHeight)
+ 
 
 thanks to the project [materialish-progress](https://github.com/pnikosis/materialish-progress) and [@pedant](https://github.com/pedant) participation.
 
 more usages about progress, please see the sample.
+
+Touch the outside to cancel the dialog ：
+
+    SweetAlertDialog sd = new SweetAlertDialog(this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+        .setCustomImage(R.drawable.pill_icon)
+        .setTitleText("3:00PM")
+        .setContentText("Asprin 50 mg. Take 2 pills")
+        .setNeutralText("Later")
+        .setCancelText("Skip it")
+        .setConfirmText("Take it!");
+	
+     sd.setCancelable(true);
+     sd.setCanceledOnTouchOutside(true);
+     sd.show();
+     sd.setDialogWidth (300); //dynamically to change the dialog width (unit is dp)
+     
+
+
+Add a neutral button ：
+
+    new SweetAlertDialog(this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+        .setCustomImage(R.drawable.pill_icon)
+        .setTitleText("3:00PM")
+        .setContentText("Asprin 50 mg. Take 2 pills")
+        .setNeutralText("Later")
+        .setCancelText("Skip it")
+        .setConfirmText("Take it!")
+        .show();
+
+
 
 A basic message：
 
@@ -175,6 +210,8 @@ Show the cancel button and bind listener to it：
             }
         })
         .show();
+        
+ 
 
 [more android tech shares: cazaea.com](http://www.cazaea.com)
 

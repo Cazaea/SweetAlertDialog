@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SweetAlertDialog.iml" filepath="$PROJECT_DIR$/SweetAlertDialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\xiaohui\Documents\GitHub\SweetAlertDialog\app\app.iml" filepath="C:\Users\xiaohui\Documents\GitHub\SweetAlertDialog\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sweet-alert-dialog.iml" filepath="$PROJECT_DIR$/sweet-alert-dialog.iml" />
+      <module fileurl="file://C:\Users\xiaohui\Documents\GitHub\SweetAlertDialog\library\library.iml" filepath="C:\Users\xiaohui\Documents\GitHub\SweetAlertDialog\library\library.iml" />
+      <module fileurl="file://C:\Users\xiaohui\Documents\GitHub\SweetAlertDialog\sweet-alert-dialog.iml" filepath="C:\Users\xiaohui\Documents\GitHub\SweetAlertDialog\sweet-alert-dialog.iml" />
     </modules>
   </component>
 </project>
