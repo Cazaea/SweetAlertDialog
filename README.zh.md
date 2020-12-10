@@ -49,7 +49,7 @@ allprojects {
 
 ![image](https://github.com/pedant/sweet-alert-dialog/raw/master/play_progress.gif)
 
-你可以通过**SweetAlertDialog.getProgressHelper()**调用materialish-progress中下面这些方法，来动态改变进度条的样式
+你可以通过 *SweetAlertDialog.getProgressHelper()* 调用materialish-progress中下面这些方法，来动态改变进度条的样式
 
 - resetCount()
 - isSpinning()
@@ -172,13 +172,13 @@ allprojects {
         })
         .show();
 
-[更多Android原创技术分享见: cazaea.com](http://www.cazaea.com)
+[更多Android原创技术分享见: cazaea.com](https://cazaea.com)
 
 ## 反 996 许可证
 
     反996许可证版本1.0
     
-    版权所有（c）2017 Cazaea(http://cazaea.com)
+    版权所有（c）2017 Cazaea(https://cazaea.com)
         
     在符合下列条件的情况下，特此免费向任何得到本授权作品的副本（包括源代码、文件和/或相关内容，以下
     统称为“授权作品”）的个人和法人实体授权：被授权个人或法人实体有权以任何目的处置授权作品，包括但
